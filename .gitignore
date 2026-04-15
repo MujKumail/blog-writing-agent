@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+myenv/
+venv/
+env/
+
+# Environment variables (IMPORTANT)
+.env
+
+# Practice / temporary code
+PracticeCode/
+
+# VS Code workspace
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
