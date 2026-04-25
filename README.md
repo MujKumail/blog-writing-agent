@@ -40,36 +40,66 @@ An AI-powered blog writing app built with `Streamlit` and `LangGraph` that takes
 ```bash
 git clone <your-repo-url>
 cd blog-writing-agent
+```
 
 ### 2. Create a virtual environment
+
+```bash
 python -m venv myenv
+```
 
 ### 3. Activate the environment
+
+```bash
 myenv\Scripts\activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 5. Add environment variables
+
+Create a `.env` file in the project root and add the following:
+
+```env
+GROQ_API_KEY=your_groq_api_key
+TAVILY_API_KEY=your_tavily_api_key
+```
+
+### 6. Run the app
+
+```bash
 streamlit run bwa_frontend.py
+```
 
 ## Usage
-Enter a blog topic in the sidebar
-Click Generate Blog
-Review the plan, evidence, and markdown preview
-Download the final output as Markdown or styled PDF
+
+1. Enter a blog topic in the sidebar.
+2. Click **Generate Blog**.
+3. Review the plan, evidence, and Markdown preview.
+4. Download the final output as Markdown or styled PDF.
 
 ## Project Structure
-- bwa_backend.py - LangGraph workflow for routing, research, planning, and generation
-- bwa_frontend.py - Streamlit UI
-- requirements.txt - Python dependencies
-- .env - API keys and environment settings
+
+- `bwa_backend.py` — LangGraph workflow for routing, research, planning, and generation
+- `bwa_frontend.py` — Streamlit UI
+- `requirements.txt` — Python dependencies
+- `.env` — API keys and environment settings
 
 ## Output
+
 The app generates:
-structured blog content
-source evidence
-markdown export
-styled PDF export
+
+- Structured blog content
+- Source evidence
+- Markdown export
+- Styled PDF export
 
 ## Notes
-Generated blog files are saved in the working directory
-The app is designed for blog drafting, research support, and fast content generation
-Make sure API keys are valid before running the app
+
+- Generated blog files are saved in the working directory.
+- The app is designed for blog drafting, research support, and fast content generation.
+- Make sure API keys are valid before running the app.
