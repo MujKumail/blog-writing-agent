@@ -40,3 +40,36 @@ An AI-powered blog writing app built with `Streamlit` and `LangGraph` that takes
 ```bash
 git clone <your-repo-url>
 cd blog-writing-agent
+
+### 2. Create a virtual environment
+python -m venv myenv
+
+### 3. Activate the environment
+myenv\Scripts\activate
+
+### 5. Add environment variables
+streamlit run bwa_frontend.py
+
+## Usage
+Enter a blog topic in the sidebar
+Click Generate Blog
+Review the plan, evidence, and markdown preview
+Download the final output as Markdown or styled PDF
+
+## Project Structure
+- bwa_backend.py - LangGraph workflow for routing, research, planning, and generation
+- bwa_frontend.py - Streamlit UI
+- requirements.txt - Python dependencies
+- .env - API keys and environment settings
+
+## Output
+The app generates:
+structured blog content
+source evidence
+markdown export
+styled PDF export
+
+## Notes
+Generated blog files are saved in the working directory
+The app is designed for blog drafting, research support, and fast content generation
+Make sure API keys are valid before running the app
